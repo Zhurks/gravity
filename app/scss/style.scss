@@ -3,6 +3,29 @@
 @import 'reset';
 @import 'global';
 
+.header {
+    padding: 65px 0 60px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.menu {
+    &__btn {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        position: relative;
+    }
+
+    &__list {
+        position: absolute;
+        top: 100px;
+    }
+}
+
 
 
 
