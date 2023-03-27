@@ -6,6 +6,8 @@ body {
 body {
     display: flex;
     flex-direction: column;
+    background-color: $bg;
+    color: $default;
 }
 
 .main {
@@ -16,4 +18,8 @@ body {
     max-width: 1110px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+a {
+    color: $default;
 }
