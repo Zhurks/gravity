@@ -66,8 +66,44 @@
 .footer {
     padding: 109px 10px;
     background-color: #515151;
-    &__logo-img{
-        margin: 0 auto;    
+
+    &__logo-img {
+        margin: 0 auto;
+    }
+}
+
+.start {
+    padding: 127px 0 375px;
+    background-image: url(../images/decor/start-decor.jpg);
+    background-repeat: no-repeat;
+    background-position: 96% 50%;
+    background-size: 48%;
+    &__inner {
+        max-width: 474px;
+    }
+
+    &__title {
+        @extend %firasans-700;
+        font-size: 60px;
+        line-height: 70px;
+        letter-spacing: -1px;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        margin-bottom: 56px;
+        opacity: 0.7;
+    }
+
+    &__link {
+        padding: 17px 30px;
+        color: #fff;
+        background-color: $button;
+        @extend %firasans-500;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
     }
 }
 
