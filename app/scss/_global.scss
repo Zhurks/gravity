@@ -7,10 +7,6 @@ body {
     display: flex;
     flex-direction: column;
     background-color: $bg;
-    color: $default;
-    @extend %firasans-400;
-    font-size: 18px;
-    line-height: 28px;
 }
 
 .main {
@@ -18,11 +14,26 @@ body {
 }
 
 .container {
-    max-width: 1110px;
+    max-width: 1111px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
 a {
     color: $default;
+}
+
+.title {
+    @extend %firasans-600;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -1px;
+}
+
+p{
+    color: $default;
+    @extend %firasans-400;
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.7;
 }
