@@ -179,6 +179,7 @@
 
 .services {
     padding-bottom: 100px;
+
     &__top {
         display: flex;
         justify-content: space-between;
@@ -232,27 +233,105 @@
         bottom: -100px;
     }
 
-    .prev{
+    .prev {
         left: 0;
     }
 
-    .next{
+    .next {
         left: 75px;
     }
 
 
     .slick-slide {
         opacity: 0.2;
+
         &.slick-active {
             opacity: 1;
-            }
         }
-    
-        .slick-list{
-            padding:0 21% 0 0;
-        }
+    }
+
+    .slick-list {
+        padding: 0 21% 0 0;
+    }
 }
 
+.result {
+    padding: 181px 0 202px;
+
+    &__wrapper {
+        background-image: url(../images/decor/result-decor-1.jpg);
+        background-repeat: no-repeat;
+        background-position: 3% 0%;
+        background-size: 39%;
+        position: relative;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__collage {
+        max-width: 540px;
+        width: 100%;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: url(../images/decor/result-decor-2.jpg);
+            width: 352px;
+            height: 454px;
+            right: 0;
+            bottom: 0;
+            filter: drop-shadow(30px 80px 180px rgba(0, 0, 0, 0.25));
+            z-index: 2;
+        }
+    }
+
+    &__content {
+        max-width: 475px;
+        padding: 43px 0 34px;
+        margin-left: 100px;
+
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        margin-bottom: 81px;
+    }
+
+    &__item {
+        @extend %firasans-500;
+        color: #000;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin-bottom: 67px;
+        padding-left: 83px;
+        position: relative;
+    }
+
+    &__ultimate-result::after,
+    &__minimal-design::after {
+        position: absolute;
+        left: 0;
+        bottom: -23px;
+        z-index: 3;
+    }
+
+    &__ultimate-result::after {
+        content: url(../images/icons/100-icon.svg);
+    }
+
+    &__minimal-design::after {
+        content: url(../images/icons/bag-icon.svg);
+    }
+}
 
 
 
