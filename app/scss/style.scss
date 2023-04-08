@@ -367,6 +367,29 @@
         margin-bottom: 52px;
     }
 
+    &__item{
+        position: relative;
+        transition: all .3s;
+        &:hover{
+            transform: translateY(-20px);
+            filter: drop-shadow(-30px 80px 200px rgba(0, 0, 0, 0.25));
+            .portfolio__btn{
+                display: block;
+            }
+        }
+    }
+    &__btn{
+        position: absolute;
+        background-image: url(../images/icons/play-btn.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 65px;
+        height: 65px;
+        top: 192px;
+        right: 143px;
+        display: none;
+    }
+
     &__bottom {
         display: flex;
         justify-content: space-between;
