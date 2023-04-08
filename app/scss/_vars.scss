@@ -22,3 +22,13 @@ $button: #3726f2;
     font-weight: 700;
 }
 
+%btn {
+    padding: 17px 30px;
+    color: #fff;
+    background-color: $button;
+    @extend %firasans-500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}

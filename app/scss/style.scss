@@ -123,14 +123,7 @@
     }
 
     &__link {
-        padding: 17px 30px;
-        color: #fff;
-        background-color: $button;
-        @extend %firasans-500;
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 4px;
-        text-transform: uppercase;
+        @extend %btn;
     }
 }
 
@@ -216,7 +209,7 @@
 
         &-link {
             position: absolute;
-            background-image: url(../images/services-filter/play-btn.svg);
+            background-image: url(../images/icons/play-btn.svg);
             background-position: center;
             background-repeat: no-repeat;
             width: 65px;
@@ -331,6 +324,61 @@
     &__minimal-design::after {
         content: url(../images/icons/bag-icon.svg);
     }
+}
+
+.portfolio {
+    padding-bottom: 248px;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 108px;
+    }
+
+    &__filter {
+        &-btn {
+            border: none;
+            background-color: transparent;
+            @extend %firasans-500;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: $default;
+            opacity: 0.3;
+            cursor: pointer;
+            padding: 0;
+            transition: all .3s;
+            &+.portfolio__filter-btn{
+                margin-left: 24px;
+            }
+            &:hover{
+                color: #1434E1;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-bottom: 52px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text{
+        max-width: 730px;
+    }
+    &__link{
+        @extend %btn;
+    }
+
 }
 
 
