@@ -350,10 +350,12 @@
             cursor: pointer;
             padding: 0;
             transition: all .3s;
-            &+.portfolio__filter-btn{
+
+            &+.portfolio__filter-btn {
                 margin-left: 24px;
             }
-            &:hover{
+
+            &:hover {
                 color: #1434E1;
                 opacity: 1;
             }
@@ -367,18 +369,21 @@
         margin-bottom: 52px;
     }
 
-    &__item{
+    &__item {
         position: relative;
         transition: all .3s;
-        &:hover{
+
+        &:hover {
             transform: translateY(-20px);
             filter: drop-shadow(-30px 80px 200px rgba(0, 0, 0, 0.25));
-            .portfolio__btn{
+
+            .portfolio__btn {
                 display: block;
             }
         }
     }
-    &__btn{
+
+    &__btn {
         position: absolute;
         background-image: url(../images/icons/play-btn.svg);
         background-position: center;
@@ -395,16 +400,80 @@
         justify-content: space-between;
         align-items: center;
     }
-    &__text{
+
+    &__text {
         max-width: 730px;
     }
-    &__link{
+
+    &__link {
         @extend %btn;
     }
 
 }
 
+.testimonials {
+    padding-bottom: 176px;
 
+    &__item {
+        display: flex !important;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__prev,
+    &__next {
+        position: absolute;
+        bottom: 0;
+        cursor: pointer;
+    }
+
+    &__next {
+        left: 75px;
+    }
+
+    &__content {
+        max-width: 540px;
+    }
+
+    &__name {
+        margin-bottom: 73px;
+    }
+
+    &__title {
+        margin-bottom: 121px;
+    }
+
+    &__person-name {
+        @extend %firasans-500;
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 13px;
+        opacity: 1;
+    }
+    &__photo{
+        margin-right: 1px;
+    }
+}
+
+.clients{
+    padding: 102px 0 146px;
+    background-color: #FAFAFA;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 73px;
+    }
+    &__textbox{
+        max-width: 445px;
+    }
+    &__name{
+        margin-bottom: 17px;
+    }
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+}
 
 
 
