@@ -1,4 +1,63 @@
+html,
+body {
+    height: 100%;
+}
 
-body{
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: $bg;
+    color: $default;
+}
 
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1111px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    color: $default;
+}
+
+.title {
+    @extend %firasans-600;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -1px;
+}
+
+p{
+    color: $default;
+    @extend %firasans-400;
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.7;
+}
+
+.section-title{
+    @extend %firasans-500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #8F8F8F;
+    opacity: 0.7;
+    padding-left: 23px;
+    margin-bottom: 40px;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 1px;
+        top: 10px;
+        left: 0;
+        background-color: #8F8F8F;
+        opacity: 0.7;
+    }
 }

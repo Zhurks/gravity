@@ -1,0 +1,34 @@
+$bg: #f4f4f4;
+$default: #222222;
+$button: #3726f2;
+
+%firasans-400 {
+    font-family: 'FiraSans-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%firasans-500 {
+    font-family: 'FiraSans-Medium', sans-serif;
+    font-weight: 500;
+}
+
+%firasans-600 {
+    font-family: 'FiraSans-SemiBold', sans-serif;
+    font-weight: 600;
+}
+
+%firasans-700 {
+    font-family: 'FiraSans-Bold', sans-serif;
+    font-weight: 700;
+}
+
+%btn {
+    padding: 17px 30px;
+    color: #fff;
+    background-color: $button;
+    @extend %firasans-500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
