@@ -6,8 +6,12 @@
 
 .header {
     padding: 65px 0 60px;
-
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $bg;
+    z-index: 10;
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -21,6 +25,7 @@
 }
 
 .menu {
+
     &__btn {
         border: none;
         background-color: transparent;
@@ -30,7 +35,7 @@
 
     &__list {
         position: absolute;
-        top: 110px;
+        top: 90px;
         right: 0;
         @extend %firasans-400;
         font-size: 18px;
@@ -40,7 +45,8 @@
         justify-content: center;
         background-color: transparent;
         display: none;
-
+        background-color: $bg;
+        padding-bottom: 20px;
         &.menu__list--active {
             display: flex;
         }
@@ -50,9 +56,9 @@
         margin-left: 30px;
     }
 
-    &__list-link {
-        transition: all .3s;
-    }
+    // &__list-link {
+    //     transition: all .5s;
+    // }
 
     &__list-link:hover {
         color: $button;
@@ -76,6 +82,7 @@
 
 .start {
     padding: 127px 0 375px;
+    margin-top: 75px;
     background-image: url(../images/decor/start-decor.jpg);
     background-repeat: no-repeat;
     background-position: 90% 50%;
@@ -92,21 +99,14 @@
         background-repeat: no-repeat;
         background-position: center;
         width: 400px;
+        max-width: 100%;
         height: 310px;
         top: 285px;
         right: -380px;
         filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.44));
-    }
-
-    &__btn {
-        position: absolute;
-        background-image: url(../images/start-video/play-btn.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 65px;
-        height: 65px;
-        top: 125px;
-        right: 167px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__title {
@@ -202,21 +202,16 @@
     }
 
     &__slider {
+
         &-item {
             position: relative;
             max-width: 825px;
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
         }
 
-        &-link {
-            position: absolute;
-            background-image: url(../images/icons/play-btn.svg);
-            background-position: center;
-            background-repeat: no-repeat;
-            width: 65px;
-            height: 65px;
-            top: 217px;
-            right: 380px;
-        }
     }
 
     .prev,
@@ -370,8 +365,8 @@
     }
 
     &__item {
-        position: relative;
         transition: all .3s;
+        position: relative;
 
         &:hover {
             transform: translateY(-20px);
@@ -385,13 +380,9 @@
 
     &__btn {
         position: absolute;
-        background-image: url(../images/icons/play-btn.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 65px;
-        height: 65px;
-        top: 192px;
-        right: 143px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         display: none;
     }
 
@@ -425,6 +416,11 @@
         position: absolute;
         bottom: 0;
         cursor: pointer;
+        z-index: 2;
+    }
+
+    &__prev {
+        left: 0;
     }
 
     &__next {
@@ -450,26 +446,38 @@
         margin-bottom: 13px;
         opacity: 1;
     }
-    &__photo{
+
+    &__photo {
         margin-right: 1px;
     }
 }
 
-.clients{
+.clients {
     padding: 102px 0 146px;
     background-color: #FAFAFA;
-    &__top{
+
+    &__top {
         display: flex;
         justify-content: space-between;
         margin-bottom: 73px;
     }
-    &__textbox{
+
+    &__textbox {
         max-width: 445px;
     }
-    &__name{
+
+    &__name {
+        color: $default;
+        opacity: 1;
         margin-bottom: 17px;
+
+        &::before {
+            color: $default;
+            opacity: 1;
+        }
     }
-    &__bottom{
+
+    &__bottom {
         display: flex;
         justify-content: space-between;
     }

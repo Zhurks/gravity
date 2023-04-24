@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body id="body">
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -34,16 +34,19 @@
                     </button>
                     <ul class="menu__list">
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">Home</a>
+                            <a class="menu__list-link" href="#body">Home</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">Services</a>
+                            <a class="menu__list-link" href="#services">Services</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">Our Works</a>
+                            <a class="menu__list-link" href="#portfolio">Our Works</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">Testimonials</a>
+                            <a class="menu__list-link" href="#testimonials">Testimonials</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#clients">Clients</a>
                         </li>
                     </ul>
                 </nav>
@@ -56,21 +59,23 @@
         <section class="start">
             <div class="container">
                 <div class="start__inner">
-                    <h1 class="start__title">
-                        Work around you and your team
-                    </h1>
                     <div class="start__textbox">
+                        <h1 class="start__title">
+                            Work around you and your team
+                        </h1>
                         <p class="start__text">
                             From ads that dance or sing to MTV-like commercials, online advertisers are now using a new
                             type
                             of technology “rich media” to attract consumers.
                         </p>
+                        <a class="start__link" href="#">
+                            get started
+                        </a>
                     </div>
-                    <a class="start__link" href="#">
-                        get started
-                    </a>
                     <div class="start__video">
-                        <a class="start__btn" data-fancybox href="https://www.youtube.com/watch?v=8GEKjBEm0SA"></a>
+                        <a class="start__btn" data-fancybox href="https://www.youtube.com/watch?v=8GEKjBEm0SA">
+                            <img class="start__btn-img" src="images/start-video/play-btn.svg" alt="button icon">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -111,7 +116,7 @@
             </div>
         </section>
 
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <h4 class="services__name section-title">Services</h4>
                 <div class="services__top">
@@ -134,32 +139,40 @@
                     </div>
                 </div>
                 <div class="services__slider">
-                    <div class="services__slider-item">
-                        <img class="services__slider-img" src="images/services-filter/services-1.jpg" alt="slide image">
+                    <div class="services__slider-item"
+                        style="background-image: url(images/services-filter/services-1.jpg);">
                         <a class="services__slider-link" data-fancybox
                             href="https://www.youtube.com/watch?v=68BCaVYDTtY">
+                            <img class="start__btn-img" src="images/icons/play-btn.svg" alt="play icon">
                         </a>
                     </div>
-                    <div class="services__slider-item">
-                        <img class="services__slider-img" src="images/services-filter/services-6.jpg" alt="slide image">
+                    <div class="services__slider-item"
+                        style="background-image: url(images/services-filter/services-6.jpg);">
                         <a class="services__slider-link" data-fancybox
-                            href="https://www.youtube.com/watch?v=Og5UHKrWgiI">
+                            href="https://www.youtube.com/watch?v=68BCaVYDTtY">
+                            <img class="start__btn-img" src="images/icons/play-btn.svg" alt="play icon">
                         </a>
                     </div>
-                    <div class="services__slider-item">
-                        <img class="services__slider-img" src="images/services-filter/services-3.jpg" alt="slide image">
+                    <div class="services__slider-item"
+                        style="background-image: url(images/services-filter/services-3.jpg);">
                         <a class="services__slider-link" data-fancybox
-                            href="https://www.youtube.com/watch?v=_5eAdpnlz-E"></a>
+                            href="https://www.youtube.com/watch?v=68BCaVYDTtY">
+                            <img class="start__btn-img" src="images/icons/play-btn.svg" alt="play icon">
+                        </a>
                     </div>
-                    <div class="services__slider-item">
-                        <img class="services__slider-img" src="images/services-filter/services-7.jpg" alt="slide image">
+                    <div class="services__slider-item"
+                        style="background-image: url(images/services-filter/services-7.jpg);">
                         <a class="services__slider-link" data-fancybox
-                            href="https://www.youtube.com/watch?v=dkdHQY0Jwyo"></a>
+                            href="https://www.youtube.com/watch?v=68BCaVYDTtY">
+                            <img class="start__btn-img" src="images/icons/play-btn.svg" alt="play icon">
+                        </a>
                     </div>
-                    <div class="services__slider-item">
-                        <img class="services__slider-img" src="images/services-filter/services-5.jpg" alt="slide image">
+                    <div class="services__slider-item"
+                        style="background-image: url(images/services-filter/services-5.jpg);">
                         <a class="services__slider-link" data-fancybox
-                            href="https://www.youtube.com/watch?v=-7sBr4-9Bw8"></a>
+                            href="https://www.youtube.com/watch?v=68BCaVYDTtY">
+                            <img class="start__btn-img" src="images/icons/play-btn.svg" alt="play icon">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -193,7 +206,7 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="container">
                 <h4 class="portfolio__name section-title">
                     Our works
@@ -212,30 +225,49 @@
                     </div>
                 </div>
                 <div class="portfolio__items">
+
                     <div class="portfolio__item mix web">
-                        <img class="portfolio__preview" src="images/portfolio/1.jpg" alt="video preview">
-                        <a class="portfolio__btn" data-fancybox href="https://www.youtube.com/watch?v=DLzxrzFCyOs"></a>
+                        <img class="portfolio__preview" src="images/portfolio/1.jpg" alt="background image">
+                        <a class="portfolio__btn" data-fancybox href="https://www.youtube.com/watch?v=DLzxrzFCyOs">
+                            <img class="portfolio__btn-img" src="images/icons/play-btn.svg" alt="play icon">
+                        </a>
                     </div>
+
                     <div class="portfolio__item mix branding">
-                        <img class="portfolio__preview" src="images/portfolio/2.jpg" alt="video preview">
-                        <a class="portfolio__btn" data-fancybox href="https://www.youtube.com/watch?v=JxS5E-kZc2s"></a>
+                        <img class="portfolio__preview" src="images/portfolio/2.jpg" alt="background image">
+                        <a class="portfolio__btn" data-fancybox href="https://www.youtube.com/watch?v=DLzxrzFCyOs">
+                            <img class="portfolio__btn-img" src="images/icons/play-btn.svg" alt="play icon">
+                        </a>
                     </div>
+
                     <div class="portfolio__item mix films web">
-                        <img class="portfolio__preview" src="images/portfolio/3.jpg" alt="video preview">
-                        <a class="portfolio__btn" data-fancybox href="https://www.youtube.com/watch?v=C42xpfWJkRI"></a>
+                        <img class="portfolio__preview" src="images/portfolio/3.jpg" alt="background image">
+                        <a class="portfolio__btn" data-fancybox href="https://www.youtube.com/watch?v=DLzxrzFCyOs">
+                            <img class="portfolio__btn-img" src="images/icons/play-btn.svg" alt="play icon">
+                        </a>
                     </div>
+
                     <div class="portfolio__item mix development web">
-                        <img class="portfolio__preview" src="images/portfolio/4.jpg" alt="video preview">
-                        <a class="portfolio__btn" data-fancybox href="https://www.youtube.com/watch?v=xAGO9miXLaA"></a>
+                        <img class="portfolio__preview" src="images/portfolio/4.jpg" alt="background image">
+                        <a class="portfolio__btn" data-fancybox href="https://www.youtube.com/watch?v=DLzxrzFCyOs">
+                            <img class="portfolio__btn-img" src="images/icons/play-btn.svg" alt="play icon">
+                        </a>
                     </div>
+
                     <div class="portfolio__item mix development">
-                        <img class="portfolio__preview" src="images/portfolio/5.jpg" alt="video preview">
-                        <a class="portfolio__btn" data-fancybox href="https://www.youtube.com/watch?v=b65o2hjFIxw"></a>
+                        <img class="portfolio__preview" src="images/portfolio/5.jpg" alt="background image">
+                        <a class="portfolio__btn" data-fancybox href="https://www.youtube.com/watch?v=DLzxrzFCyOs">
+                            <img class="portfolio__btn-img" src="images/icons/play-btn.svg" alt="play icon">
+                        </a>
                     </div>
+
                     <div class="portfolio__item mix films branding web">
-                        <img class="portfolio__preview" src="images/portfolio/6.jpg" alt="video preview">
-                        <a class="portfolio__btn" data-fancybox href="https://www.youtube.com/watch?v=o_iowRZT_Jw"></a>
+                        <img class="portfolio__preview" src="images/portfolio/6.jpg" alt="background image">
+                        <a class="portfolio__btn" data-fancybox href="https://www.youtube.com/watch?v=DLzxrzFCyOs">
+                            <img class="portfolio__btn-img" src="images/icons/play-btn.svg" alt="play icon">
+                        </a>
                     </div>
+
                 </div>
                 <div class="portfolio__bottom">
                     <p class="portfolio__text">
@@ -248,7 +280,7 @@
                 </div>
             </div>
         </section>
-        <section class="testimonials">
+        <section class="testimonials" id="testimonials">
             <div class="container">
                 <div class="testimonials__slider">
                     <div class="testimonials__item">
@@ -256,16 +288,21 @@
                             <h4 class="testimonials__name section-title">
                                 testimonials
                             </h4>
-                            <h2 class="testimonials__title title">
-                                "Professionals in their craft! All products were super great with strong attention to
-                                details, and overall vibe"
-                            </h2>
-                            <p class="testimonials__person-name">
-                                Polina Kuzina
-                            </p>
-                            <p class="testimonials__person-position">
-                                Manager at Craftwork
-                            </p>
+                            <div class="testimonials__textbox">
+                                <h2 class="testimonials__title title">
+                                    "Professionals in their craft! All products were super great with strong attention
+                                    to
+                                    details, and overall vibe"
+                                </h2>
+                                <div class="testimonials__person-box">
+                                    <p class="testimonials__person-name">
+                                        Polina Kuzina
+                                    </p>
+                                    <p class="testimonials__person-position">
+                                        Manager at Craftwork
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                         <img class="testimonials__photo" src="images/testimonials/ph-1.jpg" alt="photo">
                     </div>
@@ -274,16 +311,21 @@
                             <h4 class="testimonials__name section-title">
                                 testimonials
                             </h4>
-                            <h2 class="testimonials__title title">
-                                "Professionals in their craft! All products were super great with strong attention to
-                                details, and overall vibe"
-                            </h2>
-                            <p class="testimonials__person-name">
-                                Polina Kuzina
-                            </p>
-                            <p class="testimonials__person-position">
-                                Manager at Craftwork
-                            </p>
+                            <div class="testimonials__textbox">
+                                <h2 class="testimonials__title title">
+                                    "Professionals in their craft! All products were super great with strong attention
+                                    to
+                                    details, and overall vibe"
+                                </h2>
+                                <div class="testimonials__person-box">
+                                    <p class="testimonials__person-name">
+                                        Polina Kuzina
+                                    </p>
+                                    <p class="testimonials__person-position">
+                                        Manager at Craftwork
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                         <img class="testimonials__photo" src="images/testimonials/ph-1.jpg" alt="photo">
                     </div>
@@ -292,23 +334,28 @@
                             <h4 class="testimonials__name section-title">
                                 testimonials
                             </h4>
-                            <h2 class="testimonials__title title">
-                                "Professionals in their craft! All products were super great with strong attention to
-                                details, and overall vibe"
-                            </h2>
-                            <p class="testimonials__person-name">
-                                Polina Kuzina
-                            </p>
-                            <p class="testimonials__person-position">
-                                Manager at Craftwork
-                            </p>
+                            <div class="testimonials__textbox">
+                                <h2 class="testimonials__title title">
+                                    "Professionals in their craft! All products were super great with strong attention
+                                    to
+                                    details, and overall vibe"
+                                </h2>
+                                <div class="testimonials__person-box">
+                                    <p class="testimonials__person-name">
+                                        Polina Kuzina
+                                    </p>
+                                    <p class="testimonials__person-position">
+                                        Manager at Craftwork
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                         <img class="testimonials__photo" src="images/testimonials/ph-1.jpg" alt="photo">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="clients">
+        <section class="clients" id="clients">
             <div class="container">
                 <div class="clients__top">
                     <h2 class="clients__title title">

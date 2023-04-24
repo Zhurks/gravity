@@ -1,0 +1,347 @@
+@media (max-width: 1200px) {
+    .header {
+        padding-bottom: 20px;
+    }
+
+    .start {
+        padding-top: 100px;
+    }
+
+    .quote-section {
+        padding: 50px 0 100px;
+    }
+
+    .result {
+        padding: 115px 0 130px;
+    }
+
+    .portfolio {
+        padding-bottom: 180px;
+    }
+
+    .testimonials {
+        padding-bottom: 100px;
+    }
+
+    .clients {
+        padding: 70px 0 110px;
+    }
+
+    .footer {
+        padding: 60px 10px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .header {
+        padding-top: 45px;
+    }
+
+    .start {
+        padding: 87px 0 335px;
+        background-image: none;
+
+        &__inner {
+            max-width: 100%;
+        }
+
+        &__title {
+            font-size: 45px;
+            line-height: 55px;
+        }
+
+        &__video {
+            top: 185px;
+            right: 32px;
+        }
+    }
+
+    .quote-section {
+        padding: 0 0 45px;
+
+        &__inner {
+            background-image: none;
+        }
+
+        &__box,
+        &__text {
+            max-width: 100%;
+        }
+
+        &__box {
+            padding: 20px 0 70px;
+        }
+    }
+
+    .services {
+        &__top {
+            flex-direction: column;
+            margin-bottom: 60px;
+        }
+
+        &__title {
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+
+        &__lists {
+            max-width: 100%;
+            flex-direction: column;
+        }
+
+        &__list {
+            display: flex;
+        }
+
+        &__list-item {
+            margin-right: 30px;
+        }
+    }
+
+    .result {
+        padding: 65px 0 35px;
+
+        &__wrapper {
+            background-image: none;
+        }
+
+        &__inner {
+            display: block;
+        }
+
+        &__collage {
+            display: none;
+        }
+
+        &__content {
+            margin-left: 0;
+            max-width: 100%;
+        }
+
+        &__items {
+            display: flex;
+        }
+
+        &__item {
+            margin-right: 45px;
+        }
+    }
+
+    .portfolio {
+        padding-bottom: 130px;
+
+        &__top {
+            flex-direction: column;
+            align-items: start;
+            margin-bottom: 75px;
+        }
+
+        &__title {
+            margin-bottom: 30px;
+        }
+
+        &__bottom {
+            display: block;
+        }
+
+        &__text {
+            max-width: 100%;
+            margin-bottom: 52px;
+        }
+    }
+
+    .testimonials {
+        padding-bottom: 65px;
+
+        &__title {
+            font-size: 35px;
+            line-height: 45px;
+        }
+
+        &__content {
+            margin-right: 25px;
+        }
+    }
+
+    .clients {
+        padding: 60px 0 100px;
+    }
+}
+
+@media (max-width: 840px) {
+    .testimonials {
+        &__title {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+}
+
+@media (max-width: 715px) {
+
+    .title,
+    .start__title {
+        font-size: 37px;
+        line-height: 47px;
+    }
+
+    .start {
+        padding-bottom: 95px;
+
+        &__video {
+            top: 218px;
+            left: 0;
+        }
+
+        &__text {
+            margin-bottom: 425px;
+        }
+    }
+
+    .services {
+        &__slider-item {
+            height: 350px;
+        }
+    }
+
+    .portfolio {
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .testimonials {
+        &__item {
+            height: 485px;
+        }
+
+        &__title {
+            font-size: 24px;
+            line-height: 34px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .clients {
+        &__top {
+            flex-direction: column;
+        }
+
+        &__title,
+        .clients__name {
+            margin-bottom: 25px;
+        }
+
+        &__textbox {
+            max-width: 100%;
+        }
+
+        &__bottom {
+            flex-wrap: wrap;
+            column-gap: 30px;
+            row-gap: 30px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .section-title{
+        margin-bottom: 30px;
+    }
+    .menu__list {
+        flex-direction: column;
+        align-items: center;
+
+        &-item {
+            margin-bottom: 25px;
+        }
+
+        &-item+.menu__list-item {
+            margin-left: 0;
+        }
+    }
+
+    .title{
+        font-size: 33px;
+        line-height: 43px;
+    }
+
+    .start {
+        margin-bottom: 30px;
+        padding-top: 60px;
+        padding-bottom: 0;
+        &__inner{
+            max-width: 100%;
+            max-height: 700px;
+        }
+        &__text{
+            margin-bottom: 380px;
+        }
+        &__video{
+            position: relative;
+            top: -383px;
+        }
+    }
+    .quote-section{
+        &__profile {
+            margin-top: 35px;
+        }
+    }
+
+    .services {
+        &__top{
+            margin-bottom: 30px;
+        }
+        &__slider-item {
+            height: 277px;
+        }
+        &__list{
+            flex-wrap: wrap;
+        }
+    }
+    .result{
+        &__text{
+            margin-bottom: 40px;
+        }
+        &__items {
+            display: block;
+        }
+        &__item{
+            margin: 0 0 45px 0;
+        }
+    }
+    .portfolio{
+        &__top{
+            margin-bottom: 20px;
+        }
+        &__filter{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+        &__filter-btn+.portfolio__filter-btn {
+            margin-left: 0;
+        }
+        &__filter-btn {
+            margin-bottom: 23px;
+        }
+    }
+    }
+
+    .testimonials {
+        padding-bottom: 20px;
+        &__item {
+            height: 420px;
+        }
+        &__title{
+            font-size: 27px;
+            line-height: 37px;
+        }
+        &__name{
+            margin-bottom: 40px;
+        }
+
+        &__photo {
+            display: none !important;
+        }
+    }
